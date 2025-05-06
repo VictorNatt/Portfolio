@@ -5,19 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Victor Natã</title>
     <link rel="stylesheet" href="styles.css">
+    
+
 </head>
 <body>
-    <div class="stars">
-        <!-- Estrelas animadas -->
-        <div></div> <div></div> <div></div> <div></div> <div></div>
-        <div></div> <div></div> <div></div> <div></div> <div></div>
-        <div></div> <div></div> <div></div> <div></div> <div></div>
-        <div></div> <div></div> <div></div> <div></div> <div></div>
-        <div></div> <div></div> <div></div> <div></div> <div></div>
-        <div></div> <div></div> <div></div> <div></div>
-        <div></div> <div></div> <div></div> <div></div>
-        <!-- Você pode adicionar mais divs para mais estrelas -->
-    </div>
 
     <header>
         <div class="container">
@@ -34,40 +25,71 @@
     </section>
 
     <section id="projetos" class="fade-in">
-        <div class="container">
-            <h2>Meus Projetos</h2>
-            <p>Aqui estão alguns dos meus projetos mais recentes:</p>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Projeto 1</h3>
-                    <p>Descrição do projeto</p>
-                    <a href="#" class="btn">Ver Projeto</a>
-                </div>
-                <div class="card">
-                    <h3>Projeto 2</h3>
-                    <p>Descrição do projeto</p>
-                    <a href="#" class="btn">Ver Projeto</a>
-                </div>
-                <div class="card">
-                    <h3>Projeto 3</h3>
-                    <p>Descrição do projeto</p>
-                    <a href="#" class="btn">Ver Projeto</a>
-                </div>
-                <div class="card">
-                    <h3>Projeto 4</h3>
-                    <p>Descrição do projeto</p>
-                    <a href="#" class="btn">Ver Projeto</a>
-                </div>
-                <div class="card">
-                    <h3>Projeto 5</h3>
-                    <p>Descrição do projeto</p>
-                    <a href="#" class="btn">Ver Projeto</a>
-                </div>
-                <div class="card">
-                    <h3>Projeto 6</h3>
-                    <p>Descrição do projeto</p>
-                    <a href="#" class="btn">Ver Projeto</a>
-                </div>
+        <div class="card-container">
+            <div class="card" onclick="openModal('Math Adventure',
+            'O Math Adventure é um projeto desenvolvido com foco em educação infantil, ' +
+            'que transforma o aprendizado da matemática em uma jornada divertida e interativa. ' +
+            'Utilizando HTML, CSS e JavaScript, o jogo desafia os usuários com perguntas de lógica ' +
+            'e operações matemáticas, que avançam conforme o jogador acerta. Cada acerto permite que o ' +
+            'personagem do jogo avance em um cenário animado, incentivando o aprendizado de forma lúdica. ' +
+            'O projeto foi idealizado para melhorar o raciocínio lógico e a agilidade mental de crianças do ensino fundamental.<br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Math-Adventure\' target=\'_blank\'>Ver código no GitHub</a>',
+            'mathadventure.jpg')">
+                <h3>Math Adventure</h3>
+                <p>Site com o intuito educativo</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Blox Fruits', 'O Blox Fruits Wiki é uma plataforma online ' + 
+            'desenvolvida para fornecer informações detalhadas sobre o jogo Blox Fruits, um popular jogo de aventura ' + 
+            'inspirado em One Piece, disponível na plataforma Roblox. O objetivo do projeto foi criar um site de fácil navegação ' +
+            'e visualização de dados, como frutas do jogo e habilidades. Utilizando HTML e CSS, '+
+            'a interface foi projetada para ser amigável aos jogadores, permitindo uma consulta rápida e eficiente. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Blox-Fruits\' target=\'_blank\'>Ver código no GitHub</a>',
+            'bloxfruits.jpeg')">
+                <h3>Blox Fruits</h3>
+                <p>Wikipedia de um jogo chamado Blox Fruits</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Lan House', 'Lan House foi desenvolvido em Java e visa gerenciar o agendamento '+
+            'de máquinas em uma lan house, permitindo que os clientes realizem o cadastro, escolham uma máquina e agendem um horário para o uso. '+
+            'O sistema também inclui um banco de dados em PostgreSQL para armazenar informações dos clientes e seus respectivos agendamentos. '+
+            'A aplicação tem como objetivo otimizar a organização e controle das máquinas disponíveis, melhorando a experiência tanto para os '+
+            'clientes quanto para os administradores. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/ProjetoLanHouse\' target=\'_blank\'>Ver código no GitHub</a>',
+            'lanhouse.jpg')">
+                <h3>Lan House</h3>
+                <p>Projeto de java sobre Lan House</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Site G1', 'O projeto Replica do Site G1 consistiu na criação de uma versão simplificada do '+
+            'site de notícias G1, uma das principais plataformas de mídia do Brasil. A ideia era recriar o layout e a estrutura do site, focando '+
+            'na estética e na funcionalidade, utilizando HTML e CSS. Durante o desenvolvimento, o projeto teve como objetivo aprender a trabalhar '+
+            'com layouts complexos, como grids e responsividade, garantindo que o site funcionasse bem em diferentes dispositivos e tamanhos de tela. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Site-G-\' target=\'_blank\'>Ver código no GitHub</a>',
+            'g1.jpg')">
+                <h3>Site G1</h3>
+                <p>Uma replica simples do site G1</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Conta Bancaria', 'Conta Bancária foi desenvolvido em Python com o objetivo '+
+            'de simular uma conta bancária simples, onde o usuário pode realizar operações como depósitos, saques e consultar extrato. '+
+            'A aplicação foi criada para ser intuitiva, permitindo que o usuário interaja de forma fácil e eficaz. A ideia é fornecer uma '+
+            'experiência básica de gestão financeira, em que o usuário possa controlar seus fundos de maneira prática, podendo adicionar ou '+
+            'retirar valores da sua conta e visualizar seu extrato com as transações realizadas. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Projeto-Conta-Bancaria-da-DIO\' target=\'_blank\'>Ver código no GitHub</a>',
+            'bancaria.png')">
+                <h3>Conta Bancaria</h3>
+                <p>Projeto em Python sobre Conta Bancaria</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('TWMP', 'Este projeto foi desenvolvido em Python com o objetivo de consolidar o aprendizado de '+
+            'estruturas de controle e lógica de programação. Ao rodar o código, o usuário é saudado e pode escolher entre diferentes miniaplicações '+
+            'que executam tarefas matemáticas e computacionais úteis. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Projeto-Python\' target=\'_blank\'>Ver código no GitHub</a>',
+            'twmp.png')">
+                <h3>TWMP</h3>
+                <p>Um projeto feito em Python</p>
+                <a href="#" class="btn">Ver Projeto</a>
             </div>
         </div>
     </section>
@@ -75,7 +97,6 @@
     <section id="contato" class="fade-in">
         <div class="container">
             <h2>Contatos</h2>
-            <p>Você pode me encontrar nas seguintes redes sociais:</p>
             <ul>
                 <li><a href="https://github.com/VictorNatt" target="_blank">GitHub</a></li>
                 <li><a href="https://linkedin.com/in/victor-nat%C3%A3-649aa0361/" target="_blank">LinkedIn</a></li>
@@ -83,8 +104,17 @@
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Victor Natã. Todos os direitos reservados.</p>
-    </footer>
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <div class="modal-body" style="display: flex; gap: 20px; align-items: center;">
+            <img id="modalImage" src="" alt="Imagem do Projeto" style="width: 200px;">
+            <p id="modalDescription"></p>
+          </div>
+        </div>
+      </div>
+
+<script src="script.js"></script>
 </body>
 </html>
