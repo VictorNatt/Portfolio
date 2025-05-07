@@ -14,6 +14,24 @@ body, html {
     overflow-x: hidden;
 }
 
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid  rgba(162, 136, 255, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in;
+}
+
 /* Container principal */
 .container {
     width: 85%;
@@ -132,42 +150,43 @@ ul li a:hover {
     transform: scale(1.05);
 }
 
-.skills-section {
-    padding: 40px 0;
-    animation: fadeIn 1s ease-in;
+#skills {
+    padding: 40px;
+    background-color: rgba(20, 20, 40, 0.85);
+    color: #333;
     text-align: center;
+    animation: fadeIn 1.5s ease-in;
 }
 
-.skills-section h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+#skills h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #a288ff;
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 20px;
-    justify-items: center;
-    align-items: center;
-    padding: 20px;
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
 }
 
-.skill {
-    background: linear-gradient(135deg, #6e00ff, #9900ff);
-    color: white;
-    padding: 15px 10px;
-    border-radius: 12px;
-    width: 100%;
-    max-width: 140px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    opacity: 1; /* visível por padrão */
-    animation: fadeIn 0.8s ease-in-out;
+.skills-list li {
+    background-color: rgba(20, 20, 40, 0.85);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 1em;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
 }
 
-.skill:hover {
-    transform: translateY(-8px) scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+.skills-list li:hover {
+    transform: scale(1.05);
+    background-color: rgba(20, 20, 40, 0.85);
 }
 
 /* Estilo para a seção de Certificados */
