@@ -12,8 +12,8 @@ body, html {
     background: radial-gradient(circle at top, #0f0f2b, #1a1a2e 80%);
     color: #f0f0f0;
     overflow-x: hidden;
+    
 }
-
 .header-content {
     display: flex;
     flex-direction: column;
@@ -311,6 +311,7 @@ ul li a:hover {
     color: #fff;
     cursor: pointer;
 }
+
 
 /* Animações */
 @keyframes fadeIn {
