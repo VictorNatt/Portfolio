@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Victor Natã</title>
+    <link rel="stylesheet" href="src/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">  
+
+</head>
+<body>
+
+    <header>
+        <div class="header-content column">
+          <h1>Victor Natã</h1>
+          <p>Desenvolvedor Full Stack | Estudante de Informática</p>
+        </div>
+      </header>
+
+    <section id="sobre" class="fade-in">
+        <h2>Sobre mim</h2>
+        <div class="container">
+            <img src="sua-foto.jpg" alt="Foto de Victor Natã" class="profile-photo"> 
+            <p>Olá! Me chamo Victor Natã, sou estudante do 3º ano do curso técnico em Informática na EEEP e apaixonado por tecnologia,
+                desenvolvimento de software e aprendizado contínuo. Atualmente, estou me preparando para ingressar no mercado de trabalho
+                 como desenvolvedor full stack, com base sólida em linguagens como Java, Python, HTML, CSS e JavaScript. 
+                Tenho maior familiaridade com o back-end usando Java e Python, e também já trabalhei com PostgreSQL, realizando integrações com Java em projetos práticos.
+                Sou proativo, calmo, focado, dedicado e pontual. Acredito que o trabalho em equipe se torna mais produtivo quando todos são 
+                comprometidos — e é nesse tipo de ambiente que mais gosto de atuar.</p>
+        </div>
+    </section>
+
+    <section id="projetos" class="fade-in">
+        <div class="card-container">
+            <div class="card" onclick="openModal('Math Adventure',
+            'O Math Adventure é um projeto desenvolvido com foco em educação infantil, ' +
+            'que transforma o aprendizado da matemática em uma jornada divertida e interativa. ' +
+            'Utilizando HTML, CSS e JavaScript, o jogo desafia os usuários com perguntas de lógica ' +
+            'e operações matemáticas, que avançam conforme o jogador acerta. Cada acerto permite que o ' +
+            'personagem do jogo avance em um cenário animado, incentivando o aprendizado de forma lúdica. ' +
+            'O projeto foi idealizado para melhorar o raciocínio lógico e a agilidade mental de crianças do ensino fundamental.<br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Math-Adventure\' target=\'_blank\'>Ver código no GitHub</a>',
+            'src/mathadventure.jpg')">
+                <h3>Math Adventure</h3>
+                <p>Site com o intuito educativo</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Blox Fruits', 'O Blox Fruits Wiki é uma plataforma online ' + 
+            'desenvolvida para fornecer informações detalhadas sobre o jogo Blox Fruits, um popular jogo de aventura ' + 
+            'inspirado em One Piece, disponível na plataforma Roblox. O objetivo do projeto foi criar um site de fácil navegação ' +
+            'e visualização de dados, como frutas do jogo e habilidades. Utilizando HTML e CSS, '+
+            'a interface foi projetada para ser amigável aos jogadores, permitindo uma consulta rápida e eficiente. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Blox-Fruits\' target=\'_blank\'>Ver código no GitHub</a>',
+            'src/bloxfruits.jpeg')">
+                <h3>Blox Fruits</h3>
+                <p>Wikipedia de um jogo chamado Blox Fruits</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Lan House', 'Lan House foi desenvolvido em Java e visa gerenciar o agendamento '+
+            'de máquinas em uma lan house, permitindo que os clientes realizem o cadastro, escolham uma máquina e agendem um horário para o uso. '+
+            'O sistema também inclui um banco de dados em PostgreSQL para armazenar informações dos clientes e seus respectivos agendamentos. '+
+            'A aplicação tem como objetivo otimizar a organização e controle das máquinas disponíveis, melhorando a experiência tanto para os '+
+            'clientes quanto para os administradores. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/ProjetoLanHouse\' target=\'_blank\'>Ver código no GitHub</a>',
+            'src/lanhouse.jpg')">
+                <h3>Lan House</h3>
+                <p>Projeto de java sobre Lan House</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Site G1', 'O projeto Replica do Site G1 consistiu na criação de uma versão simplificada do '+
+            'site de notícias G1, uma das principais plataformas de mídia do Brasil. A ideia era recriar o layout e a estrutura do site, focando '+
+            'na estética e na funcionalidade, utilizando HTML e CSS. Durante o desenvolvimento, o projeto teve como objetivo aprender a trabalhar '+
+            'com layouts complexos, como grids e responsividade, garantindo que o site funcionasse bem em diferentes dispositivos e tamanhos de tela. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Site-G-\' target=\'_blank\'>Ver código no GitHub</a>',
+            'src/JORNALG1.png')">
+                <h3>Site G1</h3>
+                <p>Uma replica simples do site G1</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('Conta Bancaria', 'Conta Bancária foi desenvolvido em Python com o objetivo '+
+            'de simular uma conta bancária simples, onde o usuário pode realizar operações como depósitos, saques e consultar extrato. '+
+            'A aplicação foi criada para ser intuitiva, permitindo que o usuário interaja de forma fácil e eficaz. A ideia é fornecer uma '+
+            'experiência básica de gestão financeira, em que o usuário possa controlar seus fundos de maneira prática, podendo adicionar ou '+
+            'retirar valores da sua conta e visualizar seu extrato com as transações realizadas. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Projeto-Conta-Bancaria-da-DIO\' target=\'_blank\'>Ver código no GitHub</a>',
+            'src/bancaria.png')">
+                <h3>Conta Bancaria</h3>
+                <p>Projeto em Python sobre Conta Bancaria</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+            <div class="card" onclick="openModal('TWMP', 'Este projeto foi desenvolvido em Python com o objetivo de consolidar o aprendizado de '+
+            'estruturas de controle e lógica de programação. Ao rodar o código, o usuário é saudado e pode escolher entre diferentes miniaplicações '+
+            'que executam tarefas matemáticas e computacionais úteis. <br><br>'+
+            '<a href=\'https://github.com/VictorNatt/Projeto-Python\' target=\'_blank\'>Ver código no GitHub</a>',
+            'src/twmp.png')">
+                <h3>TWMP</h3>
+                <p>Um projeto feito em Python</p>
+                <a href="#" class="btn">Ver Projeto</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Minhas Habilidades</h2>
+        <ul class="skills-list">
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML & CSS</li>
+          <li>JavaScript</li>
+          <li>PostgreSQL</li>
+          <li>Git & GitHub</li>
+          <li>Desenvolvimento Responsivo</li>
+          <li>Trabalho em equipe</li>
+          <li>Proatividade e Organização</li>
+        </ul>
+      </section>
+
+    <section id="certificates">
+        <h2>Certificados</h2>
+        <div class="certificates-container">
+            <div class="cert-card">
+                <img src="src/CertificadoHuwaei.png" alt="HCIA Cloud Service - Huawei">
+                <h3>HCIA Cloud Service - Huawei</h3>
+                <p>Certificado adquirido após completar o curso HCIA Cloud Service da Huawei.</p>
+            </div>
+            <div class="cert-card">
+                <img src="src/Git_page-0001.jpg" alt="Curso de Cibersegurança - Google">
+                <h3>Curso de Git - DIO</h3>
+                <p>Certificado obtido ao finalizar o curso de git da DIO.</p>
+            </div>
+            <div class="cert-card">
+                <img src="src/Python_page-0001.jpg" alt="Curso de Python - DIO">
+                <h3>Curso de Python - DIO</h3>
+                <p>Certificado de conclusão do curso de Python na plataforma DIO.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="fade-in">
+        <h2>Contatos</h2>
+        <div class="container">
+            <ul>
+                <li><a href="https://github.com/VictorNatt" target="_blank">GitHub</a></li>
+                <li><a href="https://linkedin.com/in/victor-nat%C3%A3-649aa0361/" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <div id="myModal" class="modal" style="display: none;">
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <h2 id="modalTitle"></h2>
+          <div class="modal-body" style="display: flex; gap: 20px; align-items: center;">
+            <img id="modalImage" src="" alt="Imagem do Projeto" style="width: 200px;">
+            <p id="modalDescription"></p>
+          </div>
+        </div>
+      </div>
+
+<script src="src/script.js"></script>
+</body>
+</html>
